@@ -257,13 +257,38 @@ body {
 .slider__texts {
     font-size: 16px;
     font-weight: 600;
+    margin-bottom: 31px;
 }
 
 .slider__texts p:first-child {
     margin-bottom: 25px;
 }
 
-.slider-img {}
+
+/* вызвать замерщика */
+
+.slider__call {
+    position: relative;
+    display: inline-block;
+    padding: 6px 64px 6px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #FFB13D;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+.slider__call::after {
+    content: '';
+    position: absolute;
+    background: url('../img/arrow-2.svg') no-repeat top 10px left 16px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
 
 .slider-img {
     max-width: 555px;
@@ -403,7 +428,7 @@ body {
     padding: 4px 0 41px 0;
 }
 
-.menu__catalog-img {
+ъ .menu__catalog-img {
     content: "";
     background: url("../img/menu/catalog_main-img.png") no-repeat;
     position: absolute;
@@ -418,7 +443,7 @@ body {
 
 .menu__catalog-text {
     position: absolute;
-    bottom: 17px;
+    bottom: 92px;
     left: 20px;
     display: flex;
     justify-content: center;
@@ -472,9 +497,7 @@ body {
     display: block;
 }
 
-.menu__catalog-show {
-    text-transform: uppercase;
-}
+.menu__catalog-show {}
 
 .menu__catalog-show>p {
     font-size: 16px;
@@ -482,9 +505,11 @@ body {
 }
 
 .menu__catalog-show>a {
-    font-size: 16;
+    font-size: 16px;
     font-weight: 700;
     color: #ffb13d;
+    text-transform: uppercase;
+    line-height: 30px;
 }
 
 .menu__catalog-show {
