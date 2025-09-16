@@ -403,7 +403,7 @@ body {
     padding: 4px 0 41px 0;
 }
 
-ъ .menu__catalog-img {
+.menu__catalog-img {
     content: "";
     background: url("../img/menu/catalog_main-img.png") no-repeat;
     position: absolute;
