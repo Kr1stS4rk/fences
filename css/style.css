@@ -216,7 +216,7 @@ body {
     scroll-behavior: smooth;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    background: url("/img/back-banner.png") no-repeat top center;
+    background: url("../img/back-banner.png") no-repeat top center;
     background-size: cover;
 }
 
