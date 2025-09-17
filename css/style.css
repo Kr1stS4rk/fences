@@ -645,6 +645,10 @@ body {
 
 /* calculate */
 
+.calculate {
+    margin-bottom: 64px;
+}
+
 .calculate__title {
     font-weight: 700;
     font-size: 28px;
@@ -744,22 +748,26 @@ body {
     border-radius: 4px;
     background-color: #FFFFFF;
     position: relative;
-    padding: 13px 16px;
+    padding-top: 8px;
+    padding-bottom: 17px;
 }
 
 
 /*фокус */
 
 .calculate__legend {
-    margin-left: -5px font-size: 12px;
+    margin-left: 3px;
+    font-size: 12px;
     font-weight: 400;
     color: #646464;
+    background-color: #F9F9F9;
 }
 
 
 /* select */
 
-.calculate__select select {
+.calculate__field select,
+.calculate__field input {
     width: 100%;
     border: none;
     appearance: none;
@@ -768,22 +776,24 @@ body {
     font-weight: 400;
 }
 
-
-/* фокус */
-
-.calculate__select select:focus {
+.calculate__field select,
+.calculate__field input:focus {
     outline: none;
     border: none;
 }
 
-.calculate__select::after {
+.calculate__field--select::after {
     content: '';
     background: url('../img/calculate/calculate-arrow.svg') no-repeat;
     position: absolute;
     right: 0;
-    bottom: 0px;
+    bottom: 4px;
     width: 24px;
     height: 24px;
     display: block;
     pointer-events: none;
+}
+
+.calculate__field ::after {
+    content: none;
 }
