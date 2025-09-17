@@ -644,3 +644,75 @@ body {
 
 
 /* привязка к скроллу слайдера */
+
+
+/* calculate */
+
+.calculate__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 46px;
+    color: #333333;
+    margin-bottom: 31px;
+}
+
+.calculate__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 412px);
+    grid-template-rows: 394px 481px;
+    gap: 24px
+}
+
+.calculate__item {
+    background: #F9F9F9;
+    box-shadow: 1px 1px 2px #0000000A;
+}
+
+.calculate-price {
+    padding: 0;
+}
+
+.calculate-price {
+    position: relative;
+}
+
+.calculate-price img {
+    object-fit: contain;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.calculate__value {
+    position: absolute;
+    display: inline-block;
+    padding: 5px 47px 11px 51px;
+    transform: translate(36%, -50%);
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-align: center;
+    background: #3E6B47;
+}
+
+.calculate__value p:first-child {
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.calculate__value p+p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.calculate__desc {
+    text-align: center;
+    padding: 46px 38px 23px 31px;
+}
+
+.calculate__desc small {
+    font-size: 12px;
+    font-weight: 500;
+    color: #646464;
+}
