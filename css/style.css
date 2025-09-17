@@ -333,7 +333,6 @@ body {
 
 .menu__item {
     text-align: center;
-    border: 1px solid green;
     width: 256px;
     height: 158px;
     position: relative;
@@ -497,8 +496,6 @@ body {
     display: block;
 }
 
-.menu__catalog-show {}
-
 .menu__catalog-show>p {
     font-size: 16px;
     font-weight: 600;
@@ -656,7 +653,7 @@ body {
     margin-bottom: 31px;
 }
 
-.calculate__inner {
+.calculate__form {
     display: grid;
     grid-template-columns: repeat(3, 412px);
     grid-template-rows: 394px 481px;
@@ -666,17 +663,15 @@ body {
 .calculate__item {
     background: #F9F9F9;
     box-shadow: 1px 1px 2px #0000000A;
+    padding: 32px 24px 53px 24px;
 }
 
-.calculate-price {
+.calculate___item--price {
     padding: 0;
-}
-
-.calculate-price {
     position: relative;
 }
 
-.calculate-price img {
+.calculate___item--price img {
     object-fit: contain;
     display: block;
     width: 100%;
@@ -700,7 +695,7 @@ body {
     line-height: 1.5;
 }
 
-.calculate__value p+p {
+.calculate__value>small {
     font-size: 12px;
     font-weight: 500;
     line-height: 1.4;
@@ -715,4 +710,80 @@ body {
     font-size: 12px;
     font-weight: 500;
     color: #646464;
+}
+
+
+/* <!-- items с интерактивом-->  */
+
+.calculate__header {
+    display: flex;
+    margin-bottom: 32px;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 8px;
+}
+
+.calculate__icon {
+    width: 44px;
+    height: 44px;
+}
+
+
+/* calculate__fieldset */
+
+.calculate__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.calculate__fieldset {
+    border: 1px solid #E3E3E3;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    position: relative;
+    padding: 13px 16px;
+}
+
+
+/*фокус */
+
+.calculate__legend {
+    margin-left: -5px font-size: 12px;
+    font-weight: 400;
+    color: #646464;
+}
+
+
+/* select */
+
+.calculate__select select {
+    width: 100%;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* фокус */
+
+.calculate__select select:focus {
+    outline: none;
+    border: none;
+}
+
+.calculate__select::after {
+    content: '';
+    background: url('../img/calculate/calculate-arrow.svg') no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    width: 24px;
+    height: 24px;
+    display: block;
+    pointer-events: none;
 }

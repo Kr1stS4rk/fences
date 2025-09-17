@@ -251,21 +251,72 @@
             <div class="container">
                 <h3 class="calculate__title">Рассчитайте стоимость вашего забора</h3>
                 <div class="calculate__inner">
-                    <div class="calculate__item  calculate-price">
-                        <img src="img/shutter-cost.png" alt="">
-                        <div class="calculate__value">
-                            <p><strong>14 000 ₽</strong> </p>
-                            <p><small>Цена за комплект</small> </p>
+                    <!-- Форма -->
+                    <form action="" class="calculate__form">
+                        <div class="calculate__item  calculate___item--price">
+                            <img src="img/shutter-cost.png" alt="">
+                            <div class="calculate__value">
+                                <p><strong>14 000 ₽</strong> </p>
+                                <p><small>Цена за комплект</small> </p>
+                            </div>
+                            <p class="calculate__desc">
+                                <small>Расчет выполнен без учета акций и дополнительных особенностей вашего заказа</small>
+                            </p>
                         </div>
-                        <p class="calculate__desc">
-                            <small>Расчет выполнен без учета акций и дополнительных особенностей вашего заказа</small>
-                        </p>
-                    </div>
-                    <div class="calculate__item"></div>
-                    <div class="calculate__item"></div>
-                    <div class="calculate__item"></div>
-                    <div class="calculate__item"></div>
-                    <div class="calculate__item"></div>
+                        <!-- items с интерактивом-->
+                        <div class="calculate__item">
+                            <!-- иконка и title -->
+                            <div class="calculate__header">
+
+                                <img src="img/calculate/material.svg" alt="" class="calculate__icon" width="32" height="32">
+                                <span>Материал</span>
+                            </div>
+                            <!-- поля формы  -->
+                            <div class="calculate__fields">
+                                <fieldset class="calculate__fieldset">
+                                    <legend class="calculate__legend">
+                                        <span>Вид настила</span>
+                                    </legend>
+                                    <div class="calculate__select">
+
+                                        <select name="material" required>
+            <option value="Профлист">Профлист</option>
+            <option value="Евроштакетник">Евроштакетник</option>
+            <option value="Панели 3D-Гиттер">Панели 3D-Гиттер</option>
+          </select>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="calculate__fieldset">
+                                    <legend class="calculate__legend">
+                                        <span>Вид настила</span>
+                                    </legend>
+                                    <div class="calculate__select">
+
+                                        <select name="material" required>
+            <option value="С8, фигурный край">С8, фигурный край</option>
+            <option value="С8, фигурный край2">С8, фигурный край2</option>
+          </select>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="calculate__fieldset">
+                                    <legend class="calculate__legend">
+                                        <span>Толщина листа</span>
+                                    </legend>
+                                    <div class="calculate__select">
+
+                                        <select name="material" required>
+            <option value="Эконом 0,35 мм">Эконом 0,35 мм</option>
+            
+          </select>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="calculate__item"></div>
+                        <div class="calculate__item"></div>
+                        <div class="calculate__item"></div>
+                        <div class="calculate__item"></div>
+                    </form>
                 </div>
             </div>
         </section>
