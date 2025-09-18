@@ -247,10 +247,11 @@
     }
     /* вызвать замерщика */
     
-    .slider__call {
+    .btn {
         position: relative;
         display: inline-block;
         padding: 6px 64px 6px 24px;
+        border: none;
         font-size: 16px;
         font-weight: 600;
         text-transform: uppercase;
@@ -261,7 +262,7 @@
         line-height: 40px;
     }
     
-    .slider__call::after {
+    .btn::after {
         content: '';
         position: absolute;
         background: url('../img/arrow-2.svg') no-repeat top 10px left 16px;
@@ -697,6 +698,7 @@
         display: flex;
         flex-direction: column;
         gap: 24px;
+        color: #333333;
     }
     
     .calculate__fieldset {
@@ -799,4 +801,60 @@
     
     .calculate__input:checked+.checkbox__label:after {
         opacity: 1;
+    }
+    /* серый цвет */
+    
+    .fieldset--opacity {
+        opacity: 0.6;
+    }
+    
+    .fieldset--opacity .calculate__legend>span {
+        color: #646464;
+    }
+    
+    .checkbox--opacity {
+        opacity: 0.5;
+    }
+    /* конец формы */
+    
+    .calculate__end {
+        margin-top: 13px;
+    }
+    
+    .calculate__present {
+        position: relative;
+        background-color: #EBF1EC;
+        padding: 12px 30px;
+        text-align: center;
+        background-image: url("../img/calculate/cam-1.svg"), url("../img/calculate/cam-2.svg");
+        background-repeat: no-repeat;
+        background-position: left 12px bottom 12px, right 12px bottom 12px;
+        border-radius: 8px;
+    }
+    
+    .calculate__present-text {
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+    
+    .calculate__bottom {
+        margin-top: -6px;
+    }
+    
+    .calculate__submit {
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    
+    .calculate__bottom {
+        position: relative;
+        display: block;
+    }
+    
+    .calculate__bottom.btn::after {
+        background-position: top 0 right 0;
+        z-index: 6;
     }

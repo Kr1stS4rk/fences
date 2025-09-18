@@ -119,7 +119,7 @@
                                 <p>И замер для Вас получается - бесплатно!</p>
                             </div>
                         </div>
-                        <a href="#" class="slider__call">вызвать замерщика </a>
+                        <a href="#" class="slider__call btn">вызвать замерщика </a>
                     </div>
 
                     <img src="img/slider-img.png" class="slider-img" alt="" />
@@ -280,7 +280,7 @@
                       <span>Вид настила</span>
                     </legend>
                     <div class="calculate__field calculate__field--select">
-                      <select name="material" required>
+                      <select name="type-of-flooring" required>
                         <option value="Профлист">Профлист</option>
                         <option value="Евроштакетник">Евроштакетник</option>
                         <option value="Панели 3D-Гиттер">
@@ -291,7 +291,7 @@
                   </fieldset>
                   <fieldset class="calculate__fieldset">
                     <legend class="calculate__legend">
-                      <span>Вид настила</span>
+                      <span>Тип</span>
                     </legend>
                     <div class="calculate__field calculate__field--select">
                       <select name="type" required>
@@ -309,7 +309,7 @@
                       <span>Толщина листа</span>
                     </legend>
                     <div class="calculate__field calculate__field--select">
-                      <select name="widthof" required>
+                      <select name="sheet-thinkness" required>
                         <option value="Эконом 0,35 мм">Эконом 0,35 мм</option>
                       </select>
                     </div>
@@ -386,7 +386,7 @@
                       <span>Фундамент</span>
                     </legend>
                     <div class="calculate__field calculate__field--select">
-                      <select name="reference-columns" required>
+                      <select name="foundation" required>
                         <option value="Бутование">Бутование</option>
                       </select>
                     </div>
@@ -396,7 +396,7 @@
                       <span>Опорные столбы</span>
                     </legend>
                     <div class="calculate__field calculate__field--select">
-                      <select name="reference-columns" required>
+                      <select name="support-slots" required>
                         <option value="Квадратный профиль">
                           Квадратный профиль
                         </option>
@@ -409,7 +409,7 @@
                     </legend>
                     <div class="calculate__field calculate__field--select">
                       <select name="the-basement" required>
-                        <option value="Любое">Без цоколя</option>
+                        <option value="Без цоколя">Без цоколя</option>
                       </select>
                     </div>
                   </fieldset>
@@ -479,7 +479,7 @@
                         >
                       </div>
                     </div>
-                    <fieldset class="calculate__fieldset">
+                    <fieldset class="calculate__fieldset fieldset--opacity">
                     <legend class="calculate__legend">
                       <span> Особенности установки</span>
                     </legend>
@@ -515,7 +515,7 @@
                         >
                       </div>
                     </div>
-                    <div class="calculate__checkbox">
+                    <div class="calculate__checkbox checkbox--opacity">
                         <input
                           type="checkbox"
                           id="need-automation"
@@ -523,7 +523,7 @@
                           name="delivery-installation"
                           class="calculate__input"
                         />
-                        <label for="need-automation" class="checkbox__label">
+                        <label for="need-automation" class="checkbox__label ">
                         Нужна автоматика</label
                         >
                       </div>
@@ -531,7 +531,75 @@
                 </div>
               </div>
 
-              <div class="calculate__item"></div>
+              <div class="calculate__item">
+                <!-- иконка и title -->
+                <div class="calculate__header">
+                  <img
+                    src="img/calculate/calculate-5.svg"
+                    alt=""
+                    class="calculate__icon"
+                    width="32"
+                    height="32"
+                  />
+                  <span>Контактные данные</span>
+                </div>
+                <!-- поля формы  -->
+                <div class="calculate__fields">
+                 <fieldset class="calculate__fieldset">
+                    <legend class="calculate__legend">
+                      <span>Ваше имя</span>
+                    </legend>
+                    <div class="calculate__field">
+                      <input
+                        type="text"
+                        name="name"
+                      
+                        maxlength="18"
+                       placeholder="Имя"
+                      />
+                    </div>
+                  </fieldset>
+                  <fieldset class="calculate__fieldset">
+                    <legend class="calculate__legend">
+                      <span>Телефон</span>
+                    </legend>
+                    <div class="calculate__field">
+                      <input
+                        type="tel"
+                        autocomplete="tel"
+                        name="tel"
+                        
+                        inputmode="tel"
+                       placeholder="+ 7 (---) -- - -- - --"
+                      />
+                    </div>
+                  </fieldset>
+                  <fieldset class="calculate__fieldset">
+                    <legend class="calculate__legend">
+                      <span>E-mail</span>
+                    </legend>
+                    <div class="calculate__field">
+                      <input
+                        type="email"
+                        autocomplete="email"
+                        name="email"
+                  maxlength="28"
+                       placeholder="Ваш e-mail"
+                      />
+                    </div>
+                  </fieldset>
+                  </div>
+                  <div class="calculate__end">
+                    <div class="calculate__present">
+<p class="calculate__present-text">Закажите расчет и получите в подарок видеонаблюдение при монтаже </p>
+                    </div>
+                    <div class="calculate__bottom btn">
+  
+                    <input type="submit" class="calculate__submit btn" value="Заказать точный расчет">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </form>
           </div>
         </div>
