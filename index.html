@@ -308,7 +308,7 @@
                     <legend class="calculate__legend">
                       <span>Толщина листа</span>
                     </legend>
-                    <div class="calculate__field  calculate__field--select">
+                    <div class="calculate__field calculate__field--select">
                       <select name="widthof" required>
                         <option value="Эконом 0,35 мм">Эконом 0,35 мм</option>
                       </select>
@@ -345,15 +345,21 @@
                     <legend class="calculate__legend">
                       <span>Длина забора, м.</span>
                     </legend>
-                    <div class="calculate__field ">
-                      <input type="text" name="length" id="length" value="50" class=""/>
+                    <div class="calculate__field">
+                      <input
+                        type="text"
+                        name="length"
+                        id="length"
+                        value="50"
+                        class=""
+                      />
                     </div>
                   </fieldset>
                   <fieldset class="calculate__fieldset">
                     <legend class="calculate__legend">
                       <span>Покрытие</span>
                     </legend>
-                    <div class="calculate__field  calculate__field--select">
+                    <div class="calculate__field calculate__field--select">
                       <select name="coverage" required>
                         <option value="Любое">Любое</option>
                         <option value="Деревянное">Деревянное</option>
@@ -382,7 +388,6 @@
                     <div class="calculate__field calculate__field--select">
                       <select name="reference-columns" required>
                         <option value="Бутование">Бутование</option>
-                     
                       </select>
                     </div>
                   </fieldset>
@@ -390,10 +395,11 @@
                     <legend class="calculate__legend">
                       <span>Опорные столбы</span>
                     </legend>
-                      <div class="calculate__field calculate__field--select">
+                    <div class="calculate__field calculate__field--select">
                       <select name="reference-columns" required>
-                        <option value="Квадратный профиль">Квадратный профиль</option>
-                     
+                        <option value="Квадратный профиль">
+                          Квадратный профиль
+                        </option>
                       </select>
                     </div>
                   </fieldset>
@@ -406,7 +412,6 @@
                         <option value="Любое">Без цоколя</option>
                       </select>
                     </div>
-                    
                   </fieldset>
                   <fieldset class="calculate__fieldset">
                     <legend class="calculate__legend">
@@ -415,14 +420,117 @@
                     <div class="calculate__field calculate__field--select">
                       <select name="flooring" required>
                         <option value="Лаг">Лаг</option>
-                      
                       </select>
                     </div>
-                    
                   </fieldset>
                 </div>
               </div>
-              <div class="calculate__item"></div>
+              <div class="calculate__item">
+                <!-- иконка и title -->
+                <div class="calculate__header">
+                  <img
+                    src="img/calculate/calculate-4.svg"
+                    alt=""
+                    class="calculate__icon"
+                    width="32"
+                    height="32"
+                  />
+                  <span>Доставка и монтаж</span>
+                </div>
+                <!-- поля формы  -->
+                <div class="calculate__fields">
+                  <fieldset class="calculate__fieldset">
+                    <legend class="calculate__legend">
+                      <span>Удаленность от МКАД, км.</span>
+                    </legend>
+                    <div class="calculate__field">
+                      <input
+                        type="number"
+                        name="distance"
+                        id="distance"
+                        value="0"
+                      />
+                    </div>
+                  </fieldset>
+                  <div class="calculate__fields">
+                    <div class="calculate__checkboxes">
+                      <div class="calculate__checkbox">
+                        <input
+                          type="checkbox"
+                          id="installation"
+                          name="delivery-installation"
+                          class="calculate__input"
+                          value="installation"
+                        />
+                        <label for="installation" class="checkbox__label">
+                          Установка</label
+                        >
+                      </div>
+                      <div class="calculate__checkbox">
+                        <input
+                          type="checkbox"
+                          id="dismantling"
+                          name="delivery-installation"
+                          class="calculate__input"
+                          value="dismantling"
+                        />
+                        <label for="dismantling" class="checkbox__label">
+                          Демонтаж</label
+                        >
+                      </div>
+                    </div>
+                    <fieldset class="calculate__fieldset">
+                    <legend class="calculate__legend">
+                      <span> Особенности установки</span>
+                    </legend>
+                    <div class="calculate__field calculate__field--select">
+                      <select name="features" required>
+                        <option value="Без особенностейг">Без особенностей</option>
+                      </select>
+                    </div>
+                  </fieldset>
+                   <div class="calculate__checkboxes">
+                      <div class="calculate__checkbox">
+                        <input
+                          type="checkbox"
+                          id="gates"
+                          value="gate"
+                          name="delivery-installation"
+                          class="calculate__input"
+                        />
+                        <label for="gates" class="checkbox__label">
+                          Ворота</label
+                        >
+                      </div>
+                      <div class="calculate__checkbox">
+                        <input
+                          type="checkbox"
+                          id="wicket"
+                          value="wicket"
+                          name="delivery-installation"
+                          class="calculate__input"
+                        />
+                        <label for="wicket" class="checkbox__label">
+                          Калитка</label
+                        >
+                      </div>
+                    </div>
+                    <div class="calculate__checkbox">
+                        <input
+                          type="checkbox"
+                          id="need-automation"
+                          value="need-automation"
+                          name="delivery-installation"
+                          class="calculate__input"
+                        />
+                        <label for="need-automation" class="checkbox__label">
+                        Нужна автоматика</label
+                        >
+                      </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="calculate__item"></div>
             </form>
           </div>
