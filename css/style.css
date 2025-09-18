@@ -701,6 +701,10 @@
         color: #333333;
     }
     
+    .calculate__fields.big--gap {
+        gap: 32px;
+    }
+    
     .calculate__fieldset {
         border: 1px solid #E3E3E3;
         border-radius: 4px;
