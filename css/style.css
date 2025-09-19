@@ -637,6 +637,8 @@
     .calculate___item--price {
         padding: 0;
         position: relative;
+        display: flex;
+        flex-direction: column;
     }
     
     .calculate___item--price img {
@@ -650,7 +652,8 @@
         position: absolute;
         display: inline-block;
         padding: 5px 47px 11px 51px;
-        transform: translate(36%, -50%);
+        right: 20%;
+        top: 63%;
         border-radius: 5px;
         color: #FFFFFF;
         text-align: center;
@@ -671,7 +674,7 @@
     
     .calculate__desc {
         text-align: center;
-        padding: 46px 38px 23px 31px;
+        margin-top: 46px
     }
     
     .calculate__desc small {
@@ -854,31 +857,13 @@
         color: #FFFFFF;
         font-weight: 600;
         font-size: 16px;
+        display: inline-block;
+        width: 100%;
     }
     
     .calculate__bottom {
         position: relative;
         display: block;
-    }
-    
-    .calculate__bottom.btn::after {
-        background-position: top 0 right 0;
-        z-index: 6;
-    }
-    
-    .test {
-        position: relative;
-    }
-    
-    .test::after {
-        content: '';
-        background: url('../img/arrow-2.svg');
-        border: 1px solid red;
-        position: absolute;
-        width: 35px;
-        height: 35px;
-        right: 0;
-        top: 0;
     }
     /* media */
     
@@ -907,5 +892,23 @@
     @media(max-width:1284px) {
         .calculate__form {
             grid-template-columns: repeat(3, 381px);
+        }
+    }
+    
+    @media(max-width:1200px) {
+        .calculate__value {
+            right: 18%;
+            top: 58%;
+        }
+    }
+    
+    @media(max-width:1182px) {
+        .calculate__form {
+            gap: 16px;
+            justify-content: center;
+            grid-template-columns: repeat(3, 318px);
+        }
+        .header__contacts {
+            display: none;
         }
     }
