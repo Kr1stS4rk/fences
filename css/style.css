@@ -1092,7 +1092,15 @@ body {
   .calculate__submit {
     margin-top: 24px;
   }
- 
+  /* project */
+ .project{margin-bottom: 23px;margin-top: 36px;}
+ .project__inner{gap:21px; padding-left: 0;background-position: bottom;}
+.project__img {max-width: 379px;max-height: 210px;}
+ .project__title {font-size: 20px;}
+ .project__dscp{font-size: 13px;}
+ .project__text {padding-bottom: 23px;padding-top: 19px;
+    justify-content: center;}
+ .main__link {font-size: 13px;}
 }
 
 
