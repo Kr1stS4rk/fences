@@ -959,32 +959,45 @@ body {
         }
     } */
 @media (max-width: 1363.99px) {
-  .calculate__form {
-    grid-template-columns: repeat(3, 381px);
-    justify-content: center;
-  }
+ /* header */
+    .header__inner {
+         gap: 45px;
+      justify-content: space-between;
+    }
   .header__list {
     display: none;
   }
-  .nav2 {
+   
+    
+     .header__list2 {
+    display: flex;
+    gap: 28px;
+  }
+    .nav2 {
     display: flex;
     gap: 37px;
     font-size: 13px;
     font-weight: 600;
     color: #3e6b47;
   }
-  .header__list2 {
-    display: flex;
-    gap: 28px;
+
+    .header__contacts {
+    display: none;
   }
-  .header__inner {
-    gap: 45px;
-    justify-content: flex-start;
-  }
+  /* banner +slider */
+  .banner__slider {
+      padding: 0px 0 39px 0;
+    }
+
+
+ 
   .banner__slider {
     padding: 0px 22px 0px 43px;
   }
-
+ .slider__inner {
+    gap: 21px;
+    margin-bottom: 71px;
+  }
   .slider__title {
     font-size: 28px;
   }
@@ -995,16 +1008,70 @@ body {
     font-size: 13px;
     padding: 6px 39px 6px 8px;
   }
-  .slider__inner {
-    gap: 21px;
-    margin-bottom: 71px;
-  }
+ 
   .slider__call {
     max-width: 224px;
+  }
+    .slider-img {
+    width: 53%;
+    height: auto;
+    object-fit: contain;
+  }
+ 
+  
+ 
+   .menu__catalog-img {
+    display: none;
+  }
+ /* menu__Slider */
+   .menu__slider {
+    margin-top: 13px;
+  }
+  .menu__sliders {
+    padding-bottom: 26px;
+  }
+  /* menu__catalog */
+  .menu__catalog--inner {
+    background-color: #f9f9f9;
+  }
+  .menu__catalog--inner::before,
+  .menu__catalog--inner::after {
+    display: none;
+  }
+  .menu__catalog-text {
+    display: none;
+  }
+  .menu__catalog-info {
+    margin-top: 42px;
+  }
+  
+  .menu__catalog-titles {
+    justify-content: space-around;
+    gap: 0;
+  }
+   .menu__catalog-dcp {
+    font-weight: 500;
+    margin: 8px 0;
+    font-size: 13px;
   }
   .menu__catalog-img {
     display: none;
   }
+  .menu__catalog-showlink2 {
+    display: block;
+    font-size: 13px;
+  }
+ /* menu__sliders */
+   .menu__sliders {
+    max-width: 720px;
+  }
+  /* catalog__item */
+
+  .catalog__item {
+    min-width: 168px;
+    height: 205px;
+  }
+  /* calculate */
   .calculate__form {
     gap: 16px;
     justify-content: center;
@@ -1016,116 +1083,39 @@ body {
     right: 15%;
     top: 50%;
   }
-  .menu__catalog-titles {
-    justify-content: space-around;
-    gap: 0;
+  .calculate__submit {
+    padding: 9px 43px 6px 24px;
   }
-  .menu__catalog--inner::before,
-  .menu__catalog--inner::after {
+   .calculate__present {
     display: none;
   }
-  .menu__catalog--inner {
-    background-color: #f9f9f9;
+  .calculate__submit {
+    margin-top: 24px;
   }
-  .catalog__item {
-    min-width: 168px;
-    height: 205px;
-  }
-  .menu__sliders {
-    max-width: 720px;
-  }
-  .menu__catalog-dcp {
-    font-weight: 500;
-    margin: 8px 0;
-    font-size: 13px;
-  }
-  .menu__catalog-showlink2 {
-    display: block;
-    font-size: 13px;
-  }
+ 
 }
 
-/* про то что говорил Эдгар */
+
 
 @media (max-width: 1200px) {
   .calculate__value {
     right: 18%;
     top: 58%;
   }
-  /* .menu__sliders {
-        max-width: 763px;
-    }  */
+ 
 }
 
-@media (max-width: 1182px) {
-  .header__contacts {
-    display: none;
-  }
-  .calculate__submit {
-    padding: 9px 43px 6px 24px;
-  }
 
-  .menu__slider {
-    margin-top: 9px;
-  }
-  .menu__catalog-info {
-    margin-top: 42px;
-  }
-  .menu__catalog-text {
-    display: none;
-  }
-}
 
-@media (max-width: 1132px) {
-  .menu__catalog-img {
-    display: none;
-  }
-}
 
-@media (max-width: 1108px) {
-  .calculate__present {
-    display: none;
-  }
-  .calculate__submit {
-    margin-top: 24px;
-  }
-  .menu__slider {
-    margin-top: 13px;
-  }
-  .menu__sliders {
-    padding-bottom: 26px;
-  }
-  .slider-img {
-    width: 53%;
-    height: auto;
-    object-fit: contain;
-  }
-}
 
-@media (max-width: 1022px) {
-  /* .menu__sliders {
-        max-width: 468px;
-    }  */
-  @media (max-width: 900px) {
-    .banner__slider {
-      padding: 0px 0 39px 0;
-    }
-  }
-  @media (max-width: 798px) {
-    .header__inner {
-      gap: 57px;
-      justify-content: space-between;
-    }
-    .banner__slider {
-      padding: 0px 0 39px 0;
-    }
-  }
-  @media (max-width: 768px) {
-  }
+
+
+
 
   @media (max-width: 375px) {
     .calculate__form {
       grid-template-columns: repeat(2, 352px);
     }
   }
-}
+
